@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Triangulo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tituloTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GEOMETRÍA"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/descTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular área"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/areatri" />
+
+    <EditText
+        android:id="@+id/numBaseTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la BASE"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/numAltTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la ALTURA"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/botCalcTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Área: "
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/resultTriangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Aquí va el resultado"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+</LinearLayout>

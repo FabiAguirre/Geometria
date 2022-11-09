@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Circulo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tituloCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GEOMETRÍA"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/descCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular área"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgCirc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/areacircle" />
+
+    <EditText
+        android:id="@+id/numRadioCirc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese el RADIO"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/numPiCirc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese PI"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/botCalcCirc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Área: "
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/resultCirculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Aquí va el resultado"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+</LinearLayout>
